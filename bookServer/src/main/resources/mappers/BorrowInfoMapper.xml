@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dev.bookServer.mapper.BorrowInfoDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dev.bookServer.entity.BorrowInfo">
+        <result column="user_id" property="userId" />
+        <result column="book_id" property="bookId" />
+        <result column="borrow_start_time" property="borrowStartTime" />
+        <result column="borrow_end_time" property="borrowEndTime" />
+        <result column="create_date" property="createDate" />
+        <result column="update_date" property="updateDate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        user_id, book_id, borrow_start_time, borrow_end_time, create_date, update_date
+    </sql>
+
+</mapper>

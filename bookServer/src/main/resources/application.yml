@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    #type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: Wh@930615
+    url: jdbc:mysql://121.37.253.225:3306/myvhr?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mappers/*.xml
+

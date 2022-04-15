@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dev.bookServer.mapper.T_bookDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dev.bookServer.entity.T_book">
+        <id column="book_id" property="book_id" />
+        <result column="book_name" property="book_name" />
+        <result column="book_code" property="book_code" />
+        <result column="book_price" property="book_price" />
+        <result column="book_type" property="book_type" />
+        <result column="book_author" property="book_author" />
+        <result column="book_publishing_house" property="book_publishing_house" />
+        <result column="book_depreciation" property="book_depreciation" />
+        <result column="book_cover" property="book_cover" />
+        <result column="book_status" property="book_status" />
+        <result column="book_desc" property="book_desc" />
+        <result column="book_publish_date" property="book_publish_date" />
+        <result column="create_date" property="create_date" />
+        <result column="update_date" property="update_date" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        book_id, book_name, book_code, book_price, book_type, book_author, book_publishing_house, book_depreciation, book_cover, book_status, book_desc, book_publish_date, create_date, update_date
+    </sql>
+
+</mapper>
